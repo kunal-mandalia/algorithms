@@ -3,7 +3,7 @@ const assert = require('assert');
 /**
  * Does the sum of two numbers exist in array?
  * Inspired by Google's example engineering question https://www.youtube.com/watch?v=XKu_SEDAykw
- * @param {Array} arg 
+ * @param {Array} arr of integers sorted ascendingly
  * @param {Number} sum
  * @returns {Boolean}
  */
