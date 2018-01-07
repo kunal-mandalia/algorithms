@@ -13,7 +13,6 @@ function findSumUnsorted (arr, sum) {
     const compliment = arr[i] > sum ? arr[i] - sum : sum - arr[i];
     if (complements.indexOf(compliment) !== -1) {
       return true;
-      break;
     }
     complements.push(compliment);
   }
