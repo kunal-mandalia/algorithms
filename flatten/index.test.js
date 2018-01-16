@@ -1,5 +1,5 @@
 const assert = require('assert')
-const toCollapsableTableDS = require('./index').toCollapsableTableDS
+const flattenToParentChildren = require('./index').flattenToParentChildren
 
 const ds1 = {
   attributes: {
@@ -122,7 +122,7 @@ function isEqualStringified (a, b) {
   return JSON.stringify(a) === JSON.stringify(b)
 }
 
-function test_toCollapsableTableDS () {
+function test_flattenToParentChildren () {
   const cases = [
     {
       input: ds1,
@@ -173,7 +173,7 @@ function test_toCollapsableTableDS () {
   ]
 
   cases.forEach((c, i) => {
-    const output = toCollapsableTableDS(c.input)
+    const output = flattenToParentChildren(c.input)
     assert(JSON.stringify(output) === JSON.stringify(c.expectedOutput),
     `Test ${i} failed.
       expected ${JSON.stringify(output)}
@@ -181,4 +181,4 @@ function test_toCollapsableTableDS () {
     `)
   })
 }
-test_toCollapsableTableDS()
+test_flattenToParentChildren()
