@@ -1,0 +1,57 @@
+# flatten
+
+## How it works
+Index.js exports the function `flattenToParentChildren`. It takes objects like the following:
+
+
+```
+{
+  attributes: {
+    date: {},
+    name: {
+      isDerived: true,
+      source: 'playerStats',
+      reducer: (acc, cur, i) => i === 0 ? cur.name : acc + ' ' + cur.name,
+      initialValue: ''
+    },
+    goals: {
+      isDerived: true,
+      source: 'playerStats',
+      reducer: (acc, cur) => acc + cur.goals,
+      initialValue: 0
+    },
+  },
+  data: [
+    {
+      date: '2017',
+      playerStats: [
+        {
+          name: 'Messi',
+          goals: 2
+        },
+        {
+          name: 'Saurez',
+          goals: 1
+        }
+      ]
+    },
+  ]
+}
+```
+
+and outputs:
+
+```
+[
+  {
+    id: 0,
+    parent: ['2017', 'Messi Saurez', 3],
+    children: [
+      [null, 'Messi', 2],
+      [null, 'Saurez', 1]
+    ]
+  }
+]
+```
+
+This can be useful for e.g. showing / hiding detailed information in `children` such as bank transactions. Derived data is also aggregated.
