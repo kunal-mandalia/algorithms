@@ -1,6 +1,12 @@
 # Algorithms
 
-A collection of unit tested algorithms; from bubble to merge sort.
+A collection of unit tested algorithms, from bubble to merge sort.
+
+## Install
+`yarn install`
+
+## Run tests
+`yarn test`
 
 ## Notes on specific algorithms
 
