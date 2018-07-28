@@ -1,8 +1,12 @@
-# flatten
+# Algorithms
 
-## How it works
-Index.js exports the function `flattenToParentChildren`. It takes objects like the following:
+A collection of unit tested algorithms; from bubble to merge sort.
 
+## Notes on specific algorithms
+
+### flatten.js
+#### How it works
+The function `flattenToParentChildren` takes objects like the following:
 
 ```
 {
