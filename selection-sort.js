@@ -5,21 +5,15 @@ function swap(arr, to, from) {
 }
 
 function selectionSort(arr) {
-
-  let sortedCount = 0
   let minIndex
-  let [minValue] = arr
-  
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - sortedCount; j++) {
-      if (arr[j + sortedCount] < minValue) {
-        minValue = arr[j + sortedCount]
-        minIndex = j + sortedCount
+    minIndex = i
+    for (let j = i; j < arr.length; j++) {
+      if (arr[j] < arr[minIndex]) {
+        minIndex = j
       }
     }
-    swap(arr, sortedCount, minIndex)
-    sortedCount++
-    minValue = Infinity
+    swap(arr, i, minIndex)
   }
   return arr
 }
