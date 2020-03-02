@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`insert into binary tree should insert node at max depth 1`] = `
+Object {
+  "left": Object {
+    "left": null,
+    "right": null,
+    "value": 1,
+  },
+  "right": Object {
+    "left": null,
+    "right": null,
+    "value": 3,
+  },
+  "value": 2,
+}
+`;
+
+exports[`insert into binary tree should insert node between root and max level (2) 1`] = `
+Object {
+  "left": Object {
+    "left": null,
+    "right": null,
+    "value": 1,
+  },
+  "right": Object {
+    "left": null,
+    "right": Object {
+      "left": Object {
+        "left": null,
+        "right": null,
+        "value": 50,
+      },
+      "right": null,
+      "value": 150,
+    },
+    "value": 100,
+  },
+  "value": 2,
+}
+`;
+
+exports[`insert into binary tree should insert node between root and max level 1`] = `
+Object {
+  "left": Object {
+    "left": null,
+    "right": null,
+    "value": 1,
+  },
+  "right": Object {
+    "left": Object {
+      "left": null,
+      "right": null,
+      "value": 3,
+    },
+    "right": null,
+    "value": 100,
+  },
+  "value": 2,
+}
+`;
