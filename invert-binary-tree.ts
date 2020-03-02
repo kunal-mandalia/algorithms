@@ -1,10 +1,6 @@
-type BinaryTree = {
-  value: number,
-  left: BinaryTree,
-  right: BinaryTree
-} | null
+import { BinaryTreeNode } from './types'
 
-export default function invertBinaryTree(binaryTree: BinaryTree) {
+export default function invertBinaryTree(binaryTree: BinaryTreeNode) {
   if (!binaryTree) return binaryTree
   const temp = binaryTree.left
   binaryTree.left = invertBinaryTree(binaryTree.right)

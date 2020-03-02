@@ -7,23 +7,39 @@ Object {
     "right": Object {
       "left": null,
       "right": null,
-      "value": 6,
+      "value": 5,
     },
-    "value": 3,
+    "value": 6,
   },
   "right": Object {
     "left": Object {
       "left": null,
       "right": null,
-      "value": 5,
+      "value": 3,
     },
     "right": Object {
       "left": null,
       "right": null,
-      "value": 4,
+      "value": 1,
     },
     "value": 2,
   },
-  "value": 1,
+  "value": 4,
+}
+`;
+
+exports[`invert binary tree should reverse the nodes in a tree with height 2 1`] = `
+Object {
+  "left": Object {
+    "left": null,
+    "right": null,
+    "value": 3,
+  },
+  "right": Object {
+    "left": null,
+    "right": null,
+    "value": 1,
+  },
+  "value": 2,
 }
 `;
