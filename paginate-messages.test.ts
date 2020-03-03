@@ -11,6 +11,11 @@ describe('paginate messages', () => {
       s: 'The first person on the Moon was',
       maxSize: 12,
       expected: ['The first', 'person on', 'the Moon was']
+    },
+    {
+      s: 'Galois Theory is the study of geometric symmetry',
+      maxSize: 8,
+      expected: null
     }
   ]
 
