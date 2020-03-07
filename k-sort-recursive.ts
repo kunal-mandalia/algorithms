@@ -43,7 +43,7 @@ export function mergePair(left: number[], right: number[], i: number = 0, j: num
  * 
  * @param input unsorted array
  */
-export default function mergeSort(input: number[]) {
+export default function customSort(input: number[]) {
   const sorted = input.map(n => [n])
   while (sorted.length > 1) {
     const merged = mergePair(sorted[0], sorted[1])

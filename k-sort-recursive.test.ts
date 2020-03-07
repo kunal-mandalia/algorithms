@@ -1,4 +1,4 @@
-import mergeSort, { mergePair } from './merge-sort-recursive'
+import kSort, { mergePair } from './k-sort-recursive'
 
 describe('merge sort (recursive)', () => {
   describe('should sort an unsorted array of numbers', () => {
@@ -22,7 +22,7 @@ describe('merge sort (recursive)', () => {
     cases.forEach(c => {
       it(`should return ${JSON.stringify(c.expected)} given input ${JSON.stringify(c.input)}`, () => {
         // assert
-        expect(mergeSort(c.input)).toEqual(c.expected)
+        expect(kSort(c.input)).toEqual(c.expected)
       })
     })
   })
