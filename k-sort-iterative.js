@@ -1,4 +1,4 @@
-const mergeSort = (inputArray = []) => {
+const kSort = (inputArray = []) => {
   let arr = [...inputArray].map(n => [n])
   let result = []
 
@@ -35,6 +35,6 @@ const sortPair = (arr1 = [], arr2 = []) => {
 }
 
 module.exports = {
-  mergeSort,
+  kSort,
   sortPair
 }

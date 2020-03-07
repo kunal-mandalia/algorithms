@@ -1,11 +1,11 @@
-const { mergeSort, sortPair } = require("./merge-sort.js")
+const { kSort, sortPair } = require('./k-sort-iterative')
 
 describe("merge-sort", () => {
   it("should sort an unsorted array of numbers ascendingly", () => {
     // assign
     const inputArray = [6,3,2,5,4,1]
     // act
-    const result = mergeSort(inputArray)
+    const result = kSort(inputArray)
     // assert
     expect(result).toEqual([1,2,3,4,5,6])
   })
@@ -14,7 +14,7 @@ describe("merge-sort", () => {
     // assign
     const inputArray = [6,3,5,5,4,1]
     // act
-    const result = mergeSort(inputArray)
+    const result = kSort(inputArray)
     // assert
     expect(result).toEqual([1,3,4,5,5,6])
   })
