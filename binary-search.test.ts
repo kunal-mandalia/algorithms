@@ -1,4 +1,4 @@
-const { binarySearchRecursive, binarySearchIterative } = require('./binary-search')
+import { binarySearchRecursive, binarySearchIterative } from './binary-search'
 
 describe('binary-search', () => {
   describe('recursive solution', () => {

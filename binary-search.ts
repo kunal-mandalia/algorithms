@@ -1,4 +1,4 @@
-function binarySearchRecursive(arr, search, left, right) {
+export function binarySearchRecursive(arr: number[], search: number, left: number, right: number) {
   if (left > right) return false
 
   const mid = Math.floor(left + (right - left) / 2)
@@ -10,7 +10,7 @@ function binarySearchRecursive(arr, search, left, right) {
   }
 }
 
-function binarySearchIterative(arr, search) {
+export function binarySearchIterative(arr: number[], search: number) {
   let left = 0
   let right = arr.length
 
@@ -24,9 +24,4 @@ function binarySearchIterative(arr, search) {
     }
   }
   return false
-}
-
-module.exports = {
-  binarySearchRecursive,
-  binarySearchIterative
 }
